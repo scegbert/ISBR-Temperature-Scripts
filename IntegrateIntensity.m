@@ -1,4 +1,4 @@
-function [int] = IntegrateWavelength(ints, nu, start, stop) %, waveType)
+function [int] = IntegrateIntensity(ints, nu, start, stop) %, waveType)
 
 % integrates a function within the desired band
 % integration units are with respect to wavelength
