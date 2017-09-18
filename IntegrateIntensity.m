@@ -9,10 +9,10 @@ function [int] = IntegrateWavelength(ints, nu, start, stop) %, waveType)
 % Get Cvs (correction constants), calc intensities, and sum bands
 intsTruncated = ints(indexStart:indexStop);
 
-waveType = 'length';
+waveType = 'length'; %default in the meantime
 
 if indexStart == indexStop
-    
+    % if x1 = x2
     int = 0;
     
 elseif strcmp(waveType, 'number') == 1
